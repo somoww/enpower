@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+  --bg: #131415;
+  --skincolor:rgb(26, 45, 73);
+}
+*{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  color: white;
+
+
+  
+
+}
+a{
+  color: white !important;
+}
+label{
+  color: var(--bg);
+}
+body{
+ background-color:var(--bg);
+ color: white;
+
+
+}
+
+.hidden{
+    display: none;
+}
+.navbar{
+  background-color: var(--bg)!important;
+  color: white;
+  
+}
+#logo{
+  height: 70px;
+  padding-top: 20px;
+}
+
+#home-page{
+  height: 100vh;
+}
+
+.carousel-item img{
+  border-top-left-radius: 25px;
+}
+
+.list-group-item {
+  background-color: #1e1f20;
+  color: white;
+  border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.list-group-item:hover {
+  background-color: #2a2b2d;
+  transform: scale(1.02);
+}
+.bg-light {
+  background-color: #1e1f20 !important;
+}
+h2 {
+  color: #ffffff;
+}
+.highlight {
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+.highlight:hover {
+  background-color: #2a2b2d;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#form-container{
+  height: 100vh;
+ 
+}
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 1em;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.396);
+    color: var(--bg);
+    
+  }
+  .contact-form h2{
+    margin-bottom: 20px;
+   text-transform: capitalize;
+   color: var(--bg);
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  .contact-form button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #btn{
+    background-color:var(--bg);
+  }
+  #btn:hover{
+    transform: scale(1.05);
+  }
+
+ 
+.team-container{
+  width: 70%;
+  height: 100vh;
+}
+.section-padding {
+	padding: 150px 0;
+}
+.single-team {
+	padding-bottom: 70px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	box-shadow: 5px 10px 6px #292929;
+  
+}
+.team-img {
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
+  border-top-left-radius:15px ;
+  height: 200px;
+}
+.team-img img {
+	width: 100%;
+	transition: .3s;
+}
+.team-content {
+	height: 95px;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	overflow: hidden;
+	bottom: 0;
+	transition: all .4s;
+	background: #000;
+	z-index: 5;
+}
+.team-info {
+	padding: 5px 20px 5px 20px;
+	transition: all .5s;
+}
+.single-team .team-content .team-info h3 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+	margin: 5px;
+	font-weight: bold;
+}
+.team-info p {
+	margin-top: 9px;
+	color: #fff;
+	font-size: 18px;
+}
+.single-team-text p {
+	margin-top: 5px;
+}
+.team-text {
+	color: #fff;
+	padding: 0 10px 5px;
+}
+.single-team:hover .team-img img {
+	transform: scale(1.1);
+}
+.single-team:hover .team-content {
+	height: 150px;
+}
+.single-team:hover .team-info h3 {
+	color: #fff;
+}
+.single-team:hover .team-content {
+    background: linear-gradient(to right, rgba(46, 46, 46, 0.888), var(--bg));
+}
+@media (max-width:600px) {
+	.single-team {
+		margin-bottom: 30px;
+	}
+}
