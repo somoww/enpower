@@ -39,7 +39,7 @@
         <div class="hero-content">
             <img src="./photos/panels.jpeg" alt="Solar Panels Background" class="hero-image">
             <div class="hero-text-overlay">
-                <h1>Turning Surplus into Savings</h1>
+                <h1>Turning Surplus into <span class="auto-type"></span> </h1>
                 <p>Intelligent, Dynamic, and Autonomous Energy Optimization for Distributed Solar Assets</p>
             </div>
         </div>
@@ -154,8 +154,9 @@
             <h2>Contact</h2>
             <p class="contact-description">For inquiries, please reach out to us at:</p>
             <div class="contact-info">
-                 <p class="email-protected"><a href="S-hamad.kotb@zewailcity.edu.eg" >S-hamad.kotb@zewailcity.edu.eg</a></p>
-                <p class="email-protected"><a href="ibmgoda@gmail.com">ibmgoda@gmail.com</a></p>
+                 <p class="email-protected"><a href="mailto:S-hamad.kotb@zewailcity.edu.eg"  >S-hamad.kotb@zewailcity.edu.eg </a></p>
+                <p class="email-protected"><a href="mailto:ibmgoda@gmail.com">ibmgoda@gmail.com</a></p>
+                
 
             </div>
             <p class="linkedin-link">Connect with us on <a href="https://www.linkedin.com/company/enpowerco/" target="_blank">LinkedIn</a></p>
@@ -163,6 +164,7 @@
     </section>
 
 
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script>
   const toggleBtn = document.querySelector('.menu-toggle');
@@ -171,6 +173,16 @@
   toggleBtn.addEventListener('click', () => {
     navLinks.classList.toggle('active');
   });
+
+
+      var typed = new Typed('.auto-type', {
+   strings: ["savings.", "money."],
+   typeSpeed: 200,
+   backSpeed: 200,
+   loop: true
+  
+
+});
 </script>
 
 
